@@ -17,67 +17,179 @@
     
  }
 
-.search-container {
-    padding: 50px;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    padding-bottom: 10%;
+ 
+    /* header */
+
+    header{
+        width: ;
+    }
+    
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: ;
+        
+        margin-right: 20px;
+    }
+
+    .en-tête {
+        display: flex;
+    }
+
+    .social {
+        margin-left: 20px;
+    }
+
+    .toggle-input {
+        display: none;
+    }
+
+    .social label {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .social label::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+        transition: background-color 0.3s;
+    }
+
+    .toggle-input:checked + label {
+        color: blue;
+    }
+
+    .toggle-input:checked + label::before {
+        background-color: blue;
+    }
+
+    .toggle-input:hover + label::before {
+        background-color: blue;
+    }
+
+    .toggle-input:not(:checked):hover + label::before {
+        background-color: transparent;
+    }
+     
+    .sous-titres{
+        margin-bottom: 50px;
+    }
+
+    .search-container {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
 }
 
-#search-container .button{
-    padding: 20px 20px;
-    background-color: #0065FC;
-}
 
-#icon {
-padding: 10 px 20px;
-}
 
-#search-box {
-    padding: 10px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-}
-
-#envoyer{
-    padding: 10px 20px;
-    background-color: #0065fc;
-    border: none;
-    border-radius: 0px 5px 5px 0px;
-    cursor: pointer;
+/* Styles pour l'enveloppe de recherche contenant l'icône et la zone de recherche */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    border: none; /* Ajout d'une bordure pour l'esthétique */
     
 }
-  
-#search-btn {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+
+/* Styles pour l'icône de recherche */
+#search-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #000000; /* Couleur de l'icône */
     cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Styles pour la zone de recherche */
+#search-box {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px; /* Ajustez la largeur selon vos besoins */
+    
+}
+
+/* Styles pour le bouton de recherche */
+#envoyer {
+    background-color: #0065FC; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    
 }
 
 .filtres{
     justify-content: space-between ;
     display: flex;
     padding-bottom: 40px;
+    max-width: 1440px;
     
+    margin-right: 50%;
 }
 
 .filtres button{
     padding: 10px 20px;
     justify-content: space-between;
     background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 20px;
-    cursor: pointer;
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.filtres button i{
+    color: #0065FC;
+}
+
+.btn:hover{
+    background-color: #DEEBFF;
+}
+
+.logements{
+    padding-bottom: 40px;
+    max-width: 1440px;
+    display: flex;
+    
     
 }
 
+.button-i{
+    background-color: #fff;
+    color: #0065FC;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+   font-size: 5px;
+}
+
+
+
 body {
-    
+    width: 100%;
+    max-width: 1440px;
+    padding: 0  50px 50px;
+    box-sizing: border-box;
 }
 
 .main-container {
@@ -119,6 +231,7 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+    
 }
 
 /****** Hebergements And Populaires ***********/
@@ -205,6 +318,51 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+ 
+.Marseille{
+    margin-top: 50px;
+}
+
+.activity-marseille{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.activity-cards .card{
+    justify-content: space-between;
+    display: inline-block;
+    margin-top: 33px;
+    width: 70%;
+    
+    overflow: hidden;
+}
+
+.activity-cards img{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    
+}
+
+.activity-cards .card-content {
+    padding: 10px;
+}
+
+/* Styles pour le titre de chaque carte */
+.activity-cards .card-title {
+        font-size: 18px;
+}
+
+
+
+
 
 
 

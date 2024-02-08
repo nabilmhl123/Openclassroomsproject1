@@ -15,27 +15,45 @@
 </head>
 
 <body>
-    <div class="en-tête">
-        <img src="images/logo/Booki.png" alt="logo">
-        <p>Hébergements</p>
-        <p>Activités</p>
-    </div>
+    
+    <header class="container1">
+        <img src="images/logo/Booki.png" alt="logo" width="40px" height="20px">
+        <div class="en-tête">
+            <div class="social">
+                <input type="checkbox" id="hebergement-toggle" class="toggle-input">
+                <label for="hebergement-toggle">Hébergements</label>
+            </div>
+            <div class="social">
+                <input type="checkbox" id="activites-toggle" class="toggle-input">
+                <label for="activites-toggle">Activités</label>
+            </div>
+        </div>
+    </header>
+    
     <div class="sous-titres">
     <p><strong> Trouvez votre hébergement pour des vacances de rêve </strong></p>
     <p> En plein centre-ville ou en pleine nature </p>
 </div>
-        <div class="search-container">
-           <button> <i class="fa-solid fa-location-dot"></i> </button> 
-            <input type="text" id="search-box" placeholder="Destination, Ville, Pays..." >
-            <input type="submit" id="envoyer" value="Rechercher">
-        </div>
+<div class="search-container">
+    <div class="search-wrapper">
+        <button id="search-icon"> <i class="fa-solid fa-location-dot"></i> </button>
+        <input type="text" id="search-box" placeholder="Destination, Ville, Pays...">
+    
+    <input type="submit" id="envoyer" value="Rechercher">
+    </div>
+</div>
             <div class="filtres">
                 <p><strong>Filtres</strong></p>
                 <button class="btn"> <i class="fa-solid fa-money-bill-wave"></i> Economique </button>
                 <button class="btn"> <i class="fa-solid fa-person"></i> Famillial </button>
-                <button class="btn"> <i class="fa-solid fa-heart"></i> Romantique </i></button>
-                <button class="btn"> <i class="fa-solid fa-fire"></i> Nos pépites </i></button>
+                <button class="btn"> <i class="fa-solid fa-heart"></i> Romantique </button>
+                <button class="btn"> <i class="fa-solid fa-fire"></i> Nos pépites </button>
                 
+            </div>
+            <div class="logements">
+             <button class="button-i"> <i class="fa-solid fa-info"></i></button> 
+             <p>Plus de 500 logements sont di sponibles dans cette ville </p>
+
             </div>
     <div class="main-container">
         <header>
@@ -233,8 +251,75 @@
                     </div>
                 </section>
             </div>
+            <p class="Marseille"> <strong>Activités à Marseille</strong></p>
+            <div class="activity-marseille">
+                <section class="activity">
+                    <div class="activity-title">
+
+                    </div>
+                    <div class="activity-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="/images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Vieux-Port</h3>
+                                    </div>
+                                    </div>
+                                    </article>
+                                    </a>
+                                    </div>
+                                    <div class="activity-title">
+
+                                    </div>
+                                    <div class="activity-cards">
+                                        <a href="#">
+                                            <article class="card">
+                                                <img src="/images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Fort de Pomègues</h3>
+                                                    </div>
+                                                    </div>
+                                                    </article>
+                                                    </a>
+                                                    </div>
+                                                    <div class="activity-title">
+
+                                                    </div>
+                                                    <div class="activity-cards">
+                                                        <a href="#">
+                                                            <article class="card">
+                                                                <img src="/images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                                                <div class="card-content">
+                                                                    <div class="card-txt">
+                                                                        <h3 class="card-title">Parc national des Calanques</h3>
+                                                                    </div>
+                                                                    </div>
+                                                                    </article>
+                                                                    </a>
+                                                                    </div>
+                                                                    <div class="activity-title">
+
+                                                                    </div>
+                                                                    <div class="activity-cards">
+                                                                        <a href="#">
+                                                                            <article class="card">
+                                                                                <img src="/images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                                                                <div class="card-content">
+                                                                                    <div class="card-txt">
+                                                                                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </article>
+                                                                                    </a>
+                                                                                    </div>
+                                    </section>
+                                    </div>
         </main>
-        <footer></footer>
+        <footer>
+
+        </footer>
     </div>
 </body>
 
