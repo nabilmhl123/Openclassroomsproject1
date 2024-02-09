@@ -21,10 +21,6 @@ header {
 
 /* header */
 
-#vignette1 {
-    background-image: url("test.jpg");
-    object-fit: cover;
-}
 
 
 
@@ -124,6 +120,11 @@ header {
 .sous-titres h6 {
     font-size: 20px;
 }
+
+.card-title {
+    font-size: 16px;
+}
+
 
 /*SMARTPHONE*/
 @media(max-width:1000px) {
@@ -304,20 +305,13 @@ a {
 }
 
 .card {
-    background-color: white;
     border-radius: 20px;
+    width: 25%;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
-    object-fit: cover;
-}
 
-.card-title {
-
-    font-size: 16px;
-}
 
 .euro {
     font-weight: 700;
@@ -422,27 +416,37 @@ a {
 }
 
 .activity {
+    /* border: solid 1px rgb(17, 0, 255); */
     width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
 
-.activity-cards .card {
-    justify-content: space-between;
-    display: inline-block;
-    margin-top: 33px;
-    width: 70%;
-
-    overflow: hidden;
+.activitycard {
+    height: 350px;
+    /* border: solid 1px red; */
+    border-radius: 20px;
+    padding: 5px;
 }
 
-/* .activity-cards img {
-    width: 100%;
-    height: 350px;
-    border-radius: 20px;
 
-} */
+
+@media (min-width:501px) and (max-width: 1000px) {
+    .activity-cards {
+        width: 35%;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .activity-cards {
+        width: 50%;
+        margin: 5px;
+    }
+}
+
+
 
 .activity-cards .card-content {
     padding: 10px;
@@ -453,7 +457,27 @@ a {
     font-size: 18px;
 }
 
+#vignette1 {
+    background-image: url("../images/activites/florian-wehde.jpg");
+    object-fit: cover;
+}
 
+#vignette2 {
+    background-image: url("../images/activites/kilyan-sockalingum.jpg");
+    object-fit: cover;
+}
+
+
+#vignette3 {
+    background-image: url("../images/activites/paul-hermann.jpg");
+    object-fit: cover;
+}
+
+
+#vignette4 {
+    background-image: url("../images/activites/reno-laithienne.jpg");
+    object-fit: cover;
+}
 
 
 
@@ -464,7 +488,7 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }

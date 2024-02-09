@@ -1,0 +1,108 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+header {
+    position: relative;
+
+}
+
+/*Le corps de ma page (toutes les modifications
+générales se trouvent la) */
+
+body{
+    width: 100%;
+}
+
+/*La section de mon en-tête*/
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.onglets1{
+    display: flex;
+    cursor: pointer;
+}
+
+/* effet de couleur au survol de la souris*/
+.onglets1 .hover1:hover{
+    color: #0065FC;
+}
+
+.onglets1 .hover2:hover{
+    color: #0065FC;
+}
+
+/*petite marge pour les écartés légèrement entre eux*/ 
+.onglets1 p{
+    margin: 15px;
+}
+
+.toggle-input {
+    display: none;
+}
+
+/* toute cette section entre en compte sur mes éléments 
+pour qu'il y ait un effet de bascule compris avec la barre horizontale*/
+.social{
+margin-left: 20px;
+}
+
+.social label {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.social label::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s;
+}
+
+.toggle-input:checked+label {
+    color: #0065FC;
+}
+
+.toggle-input:checked+label::before {
+    background-color: #0065FC;
+}
+
+.toggle-input:hover+label::before {
+    background-color: #0065FC;
+}
+
+.toggle-input:not(:checked):hover+label::before {
+    background-color: transparent;
+}
+/* jusqu'ici avec les couleurs comprises*/
+
+.sous-titres {
+    margin-bottom: 20px;
+}
+
+.sous-titres h6 {
+    font-size: 20px;
+}
