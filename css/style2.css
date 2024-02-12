@@ -20,21 +20,6 @@ header {
 
 
 /* header */
-
-
-
-
-
-@media(max-width: 1000px) {
-    .container1 img {
-        align-items: center;
-    }
-}
-
-
-
-
-
 .container1 {
     display: flex;
     justify-content: space-between;
@@ -91,30 +76,8 @@ header {
     background-color: transparent;
 }
 
-/*smartphone*/
-@media(max-width:1000px) {
-    .container1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        margin: 20px;
-        padding: 20px;
-        flex-direction: column;
-        margin-right: 20px;
-    }
-}
-
-/*SMARTPHONE*/
-@media(max-width:1000px) {
-    .en-tête {
-        margin-top: 20px;
-    }
-}
-
 .sous-titres {
     margin-bottom: 50px;
-
 }
 
 .sous-titres h6 {

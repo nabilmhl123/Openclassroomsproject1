@@ -38,3 +38,25 @@
         margin-right: 20px;
     }
 }
+
+@media(max-width:1000px) {
+    .search-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+}
+}
+
+@media(max-width:1000px){
+    .filtres{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            align-content: space-around;
+}
+}
