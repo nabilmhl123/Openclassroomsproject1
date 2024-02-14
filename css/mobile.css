@@ -82,6 +82,75 @@ height: 20px;
 }
 }
 
+@media(max-width:500px){
+        .hebergements-and-populaires{
+            display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+}
+
+@media(max-width:500px){
+    .populaires{
+        width: 100%;
+        margin-bottom: 50px;
+}
+}
+
+@media(max-width:500px){
+    .hebergements{
+        width: 100%;
+        
+}
+}
+
+@media(max-width:500px){
+    .hebergements-cards .card{
+        width: 100%;
+        margin-bottom: 50px;
+
+}
+}
+
+@media(max-width:500px){
+    .activity-cards{
+        display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+}
+}
+
+@media(max-width:500px){
+    .france-activity{
+        width: 100%;
+}
+}
+
+@media(max-width:500px){
+    .footer{
+        display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+}
+}
+
+@media(max-width:500px){
+    .footer{
+        height: 100%;
+        text-align: center;
+}
+}
+
+
 
 
     

@@ -382,3 +382,16 @@ a {
     font-size: 18px;
     padding: auto;
 }
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #ccc;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.footer h5{
+    font-size: 18px;
+}
