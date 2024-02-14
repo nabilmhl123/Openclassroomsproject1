@@ -331,8 +331,7 @@ a {
 .hebergements-cards img {
     width: 100%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
 }
 
 
@@ -376,71 +375,33 @@ a {
     margin-bottom: 5px;
 }
 
-.Marseille {
-    margin-top: 50px;
-}
-
-.activity-marseille {
-    display: flex;
-    justify-content: space-between;
-}
-
-.activity {
-    /* border: solid 1px rgb(17, 0, 255); */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
 .activity-cards{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.france-activity{
     width: 25%;
     margin: 10px;
-    display: block;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 360px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 1px 1px  #ccc;
 }
 
-.activitycard {
-    height: 350px;
-    /* border: solid 1px red; */
-    border-radius: 20px;
-    padding: 5px;
-}
-
-
-/* .activity-cards img {
+.france-activity img{
     width: 100%;
-    height: 350px;
-    border-radius: 20px;
-
-} */
-
-.activity-cards .card-content {
-    padding: 10px;
+    height: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-/* Styles pour le titre de chaque carte */
-.activity-cards .card-title {
+.france-activity .card-title {
+    margin-left: 15px;
     font-size: 18px;
-}
-
-#vignette1 {
-    background-image: url("../images/activites/florian-wehde.jpg");
-    object-fit: cover;
-}
-
-#vignette2 {
-    background-image: url("../images/activites/kilyan-sockalingum.jpg");
-    object-fit: cover;
-}
-
-
-#vignette3 {
-    background-image: url("../images/activites/paul-hermann.jpg");
-    object-fit: cover;
-}
-
-
-#vignette4 {
-    background-image: url("../images/activites/reno-laithienne.jpg");
-    object-fit: cover;
+    padding: auto;
 }
