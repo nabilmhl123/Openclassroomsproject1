@@ -1,0 +1,84 @@
+ @media (max-width:1024px){
+    .filtres{
+        margin: 2px;
+}
+    .filtres button{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        
+}
+.filtres button i{
+    margin: 5px;
+}
+
+@media(max-width:1024px){
+    .hebergements-and-populaires{
+        display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+}
+}
+
+@media(max-width:1024px){
+    .hebergements{
+        display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+}
+
+
+.hebergements{
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+
+.hebergements-cards{
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+.hebergements-cards .card{
+    
+}
+
+.populaires{
+    width: 100%;
+}
+
+.populaires-cards{
+    display: flex;
+    
+}
+
+.populaires-cards .card{
+    width: 100%;
+}
+
+
+
+
+.activity-cards{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.activity-cards .img_container{
+   object-fit: cover;
+    
+}
+
+.france-activity{
+    object-fit: cover;
+    
+}
+}

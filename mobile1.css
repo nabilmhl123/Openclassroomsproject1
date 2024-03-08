@@ -72,10 +72,13 @@
 }
 }
 
-@media(min-width:600px){
+@media(min-width:500px){
     .icon2{
         display: none;
 
+    }
+    .icon1{
+        display: none;
     }
 }
 

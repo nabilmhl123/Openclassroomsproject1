@@ -28,6 +28,11 @@ body{
     height: 100vh; /* 100% de la hauteur de la fenêtre visible */
 }
 
+h1{
+    font-size: 15px ;
+    padding-bottom: 20px;
+}
+
 /*La section de mon en-tête*/
 .container1{
     display: flex;
@@ -113,7 +118,6 @@ margin-left: 20px;
 .search-container {
     width: 100%;
     max-width: 1440px;
-    
     box-sizing: border-box;
     padding-bottom: 50px;
     display: flex;
@@ -126,7 +130,8 @@ margin-left: 20px;
 .search-onglet {
     display: flex;
     align-items: center;
-    border: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     /* Ajout d'une bordure pour l'esthétique */
 
 }
@@ -135,12 +140,13 @@ margin-left: 20px;
 #search-icon {
     font-size: 20px;
     margin-right: 5px;
-    color: #000000;
+    border: none;
+    /*color: #000000;*/
     /* Couleur de l'icône */
     cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 5px;
-    width: 10%;
+    /*border: 1px solid #ccc;*/
+    padding: 6px;
+    width: 15%;
     border-radius: 5px 0 0 5px;
 }
 
@@ -164,6 +170,14 @@ margin-left: 20px;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
+}
+
+.icon2{
+    box-shadow: 0px 1px 0px 1px #ccc;
+}
+
+.icon2 i{
+    color: white;
 }
 
 .filtres {
@@ -211,6 +225,7 @@ margin-left: 20px;
     font-size: 5px;
 }
 
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -225,6 +240,11 @@ body {
     padding: 0 50px 50px;
     box-sizing: border-box;
 }
+
+h2{
+    
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -313,6 +333,7 @@ a {
 
 
 .populaires-title {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -331,12 +352,16 @@ a {
 }
 
 .populaires-cards .card-content {
-    width: 67%;
+   
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.populaires-cards .card .img_container{
+    object-fit: cover;
 }
 
 .populaires-cards .card-title {
@@ -350,7 +375,9 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
-}
+} 
+
+
 
 .activity-cards{
     display: flex;
@@ -394,4 +421,8 @@ a {
 
 .footer h5{
     font-size: 18px;
+}
+
+.icon2{
+    
 }
